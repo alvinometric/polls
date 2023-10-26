@@ -1,0 +1,12 @@
+---
+import Layout from "./Layout.astro";
+
+const title = "Hello Manchester Tech Festival";
+---
+
+<Layout title={title}>
+  <h1>{title}</h1>
+  <slot />
+</Layout>
+
+<script type="module" src="https://unpkg.com/poll-party@0.0.1"></script>

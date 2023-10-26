@@ -1,0 +1,5 @@
+{
+  "name": "polls",
+  "main": "party/index.js",
+  "compatibilityDate": "2023-10-26"
+}

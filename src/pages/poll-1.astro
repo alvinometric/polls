@@ -1,0 +1,15 @@
+---
+import Layout from "../layouts/PollLayout.astro";
+
+const question = "Is Edinburgh west of Liverpool?";
+const { PUBLIC_PARTYKIT_HOST } = import.meta.env;
+const partykit = PUBLIC_PARTYKIT_HOST;
+---
+
+<Layout title={question}>
+  <poll-party host={partykit}>
+    <question>{question}</question>
+    <option id="yes">Yes</option>
+    <option id="no">No</option>
+  </poll-party>
+</Layout>

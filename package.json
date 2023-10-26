@@ -1,0 +1,19 @@
+{
+  "name": "polls",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev --open",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^3.4.0",
+    "partysocket": "0.0.12"
+  },
+  "devDependencies": {
+    "partykit": "0.0.32"
+  }
+}

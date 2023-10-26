@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/PollLayout.astro";
+
+const question = "How big is Greenland compared to Africa?";
+const { PUBLIC_PARTYKIT_HOST } = import.meta.env;
+const partykit = PUBLIC_PARTYKIT_HOST;
+---
+
+<Layout title={question}>
+  <poll-party host={partykit}>
+    <question>{question}</question>
+    <option id="2x-bigger">Greenland is 2x bigger</option>
+    <option id="same-size">They are the same size</option>
+    <option id="2x-smaller">Greenland is 2x smaller</option>
+    <option id="14x-smaller">Greenland is 14x smaller</option>
+  </poll-party>
+</Layout>
